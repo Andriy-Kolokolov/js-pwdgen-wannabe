@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Title</title>
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body class="d-flex justify-content-center align-items-center flex-column">
+
+		<div class="p-3 rounded ms-generate-pass-window">
+			<form class="row g-3">
+				<div class="col-md-4">
+					<label for="name" class="form-label">First name</label>
+					<input type="text" class="form-control " id="name" placeholder="Enter Your Name"
+							required>
+				</div>
+
+				<div class="col-md-4">
+					<label for="surname" class="form-label">Surname</label>
+					<input type="text" class="form-control" id="surname" placeholder="Enter Your Surname"
+							required>
+
+				</div>
+
+				<div class="col-md-4">
+					<label for="favorite-color" class="form-label">Favorite Color</label>
+					<input type="text" class="form-control" id="favorite-color" placeholder="Your Favorite Color"
+							required>
+				</div>
+
+				<div class="col-12 d-flex justify-content-center">
+					<button class="btn btn-success ms-btn-generate-pass" id="btn-generate-pass">Generate Password</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="mt-3 p-2 rounded ms-your-new-pass">
+			<div class="p-2 d-flex justify-content-center">Your new password:</div>
+			<div class="container p-1 bg-white rounded" id="new-pass-field"></div>
+			<span class="d-flex justify-content-center">
+				<button class="mt-2 btn btn-primary" id="btn-copy-pass">Copy</button>
+			</span>
+		</div>
+
+
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
